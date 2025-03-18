@@ -1,7 +1,7 @@
 # PMLP: Predicting Distant Metastatic Sites of Cancer Patients
 
 ## Overview
-This repository contains the implementation of the **Perturbed Multilayer Perceptron (PMLP) model**, a deep learning framework designed to predict distant metastatic sites in cancer patients using competitive endogenous RNA (ceRNA) expression data and correlation-based features.
+This repository contains the implementation of the **Perturbed Multilayer Perceptron (PMLP) model**, a deep learning framework designed to predict distant metastatic sites in cancer patients useing correlation changes of ceRNAs ΔSCCs and expressions of individual cancer patients.
 
 ## Repository Contents
 - **`PMLP_model.ipynb`** – Jupyter Notebook for training and evaluating the PMLP model.
@@ -10,14 +10,18 @@ This repository contains the implementation of the **Perturbed Multilayer Percep
 - **`TOP10_ceRNA_pairs_allsites.csv`** – The top 10 most predictive ceRNA pairs per metastatic site identified by our model.
 - **`README.md`** – This file, containing details on the project and usage instructions.
 
-## Dataset and Model
-- The model was trained and evaluated on publicly available gene expression datasets from **GEO**.
-- The model uses **mRNA, lncRNA, and pseudogene expression data** to predict **bone, brain, liver, lung, or no metastasis**.
-- **Perturbation techniques** were introduced to enhance robustness and generalization.
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/wyywwwww/PMLP.git
-   cd PMLP
+## **Requirements**
+To run the code in this repository, ensure you have the following:
+
+- **Python version**: 3.8 or later
+
+**Dependencies**:
+- tensorflow==2.13.0
+- numpy==1.24.3
+- pandas==1.5.3
+- scikit-learn==1.2.2
+- matplotlib
+- seaborn
+- jupyter
 
